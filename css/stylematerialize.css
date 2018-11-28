@@ -37,10 +37,10 @@ body{
 
 @media (max-width: 768px) {
     .titre {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .sous_titre {
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
 }
 
