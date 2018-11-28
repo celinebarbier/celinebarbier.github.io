@@ -6,6 +6,9 @@ body{
 
 /*NAVBAR*/
 
+.sidenav-overlay{
+    z-index: 996;
+}
 
 /*HEADER*/
 
@@ -13,11 +16,22 @@ body{
     font-family: 'Patrick Hand', cursive;
 }
 
+@media (max-width: 768px) {
+    .titre{
+        font-size: 2em;
+    }
+}
+
 /*A PROPOS*/
 
 strong{
     font-weight: bold;
     color: blue;
+}
+
+.modal{
+    width: 75% !important;
+    height: 100% !important;
 }
 
 
@@ -102,7 +116,11 @@ section.timeline-outer {
   /*——————————————
   Responsive Stuff
   ———————————————*/
-  
+@media screen and (max-width: 991px) {
+    .timeline:before {
+        background: transparent !important;
+    }
+}
 @media (max-width: 945px) {
     .timeline .event::before {
       left: 0.5px;

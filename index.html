@@ -32,7 +32,7 @@
 
             <ul id="slide-out" class="sidenav">
                 <li><div class="user-view">
-                        <a href="#user"><img class="circle" src="images/img_fond.jpg" alt="photo profil"></a>
+                        <a href="#user"><img class="circle" src="images/celine.png" alt="photo profil"></a>
                         <a href="#name"><span class="black-text name">Céline Barbier</span></a>
                         <a href="#email"><span class="black-text email">celinebarbier5@gmail.com</span></a>
                     </div>
@@ -99,7 +99,14 @@
                     </div>
                     <div class="col s12 m4 l4">
                         <img class="circle responsive-img" style="margin-bottom: 10%;" src="images/celine.png" alt="photo de profil"/>
-                        <div class="center"><a href="cv/celine.barbier.png" class="waves-effect btn-large indigo pulse">Mon CV<i class="material-icons right">file_download</i></a></div>
+                        <div class="center"><a href="cv/CV - Céline Barbier.pdf" class="waves-effect btn-large indigo pulse">Télécharger mon CV<i class="material-icons right">file_download</i></a></div>
+                        <br>
+                        <div class="center"><a class="waves-effect btn-large indigo pulse modal-trigger" href="#modall">Aperçu du CV</a></div>
+                        <div id="modall" class="modal">
+                            <div class="modal-content">
+                                <img src="cv/CV - Céline Barbier.jpg" style="width: 100%;">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -268,9 +275,9 @@
                         <p>Je recherche une opportunité en Ile-de-France</p>
                         <p>Mon adresse et numéro de télépone se trouvent dans mon CV</p>
                         <a href="mailto:celinebarbier5@gmail.com" class="black-text"><i class="inline-icon material-icons black-text prefix">email</i> celinebarbier5@gmail.com</a> 
-                        <p><a href="https://www.linkedin.com/in/c%C3%A9line-barbier-782888150/" class="black-text"><svg class="inline-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                            <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
-                        </svg> celine barbier</a></p>
+                        <p><a href="https://www.linkedin.com/in/c%C3%A9line-barbier-782888150/" class="black-text"><svg class="inline-icon"style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#000000" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
+                            </svg> celine barbier</a></p>
                     </div>
                 </div>
                 <div class="col s12 m5 l5">
@@ -305,7 +312,7 @@
     </div>
 
     <footer style="margin-top: -20px;">
-        <p class="center indigo lighten-2 white-text" style="padding: 1%; font-size: 1.3em;">Fait avec <i class="material-icons" style="vertical-align: middle !important;">favorite_border</i></p>
+        <p class="center indigo lighten-2 white-text" style="padding: 1%; font-size: 1.3em;">Novembre 2018 - Fait avec <i class="inline-icon material-icons" style="vertical-align: middle !important;">favorite_border</i> - Céline Barbier</p>
     </footer>
 
 
@@ -320,6 +327,11 @@
     <script>
         $(document).ready(function(){
             $('.parallax').parallax();
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
         });
     </script>
 </body>
