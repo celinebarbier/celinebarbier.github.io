@@ -12,13 +12,35 @@ body{
 
 /*HEADER*/
 
-.titre{
+.parallax-container {
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    .parallax-container {
+        height: 200px;
+    }
+}
+
+.titre {
+    font-size: 2.7em;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.sous_titre {
+    font-size: 2.2em;
+}
+
+.sous_titre {
     font-family: 'Patrick Hand', cursive;
 }
 
 @media (max-width: 768px) {
-    .titre{
+    .titre {
         font-size: 2em;
+    }
+    .sous_titre {
+        font-size: 1.7em;
     }
 }
 
@@ -26,7 +48,7 @@ body{
 
 strong{
     font-weight: bold;
-    color: blue;
+    color: #5c6bc0;
 }
 
 .modal{
@@ -51,7 +73,7 @@ section.timeline-outer {
 /* Timeline */
   
 .timeline {
-    border-left: 8px solid #42A5F5;
+    border-left: 8px solid #5c6bc0;
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -103,7 +125,7 @@ section.timeline-outer {
 }
   
 .timeline .event:after {
-    box-shadow: 0 0 0 8px #42A5F5;
+    box-shadow: 0 0 0 8px #5c6bc0;
     left: -30px;
     background: #212121;
     border-radius: 50%;
